@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+outputs/*
+!outputs/.gitkeep
+*.pyc
+
+!outputs/confusion_matrix.png
+!outputs/metrics.csv
