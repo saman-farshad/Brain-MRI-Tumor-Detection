@@ -46,3 +46,30 @@ An optional step-by-step notebook, `Brain_MRI_Classifier.ipynb`, mirrors the sam
 - Check dataset composition, scanner/site differences, label quality and licensing; address class imbalance and bias.
 - `scoring='f1'` is used here because the labels are numeric 0/1 and both precision and recall matter. High test accuracy alone does not establish medical safety.
 - No performance claim is made until training on actual labeled data.
+
+## Model Performance
+
+The SVM classifier was trained and evaluated on
+a labeled Brain MRI dataset.
+
+| Metric | Score |
+|---|---|
+| Train Accuracy | 97.74% |
+| Test Accuracy | 84.21% |
+| Precision | 84.31% |
+| Recall | 91.49% |
+| F1 Score | 87.76% |
+
+## Confusion Matrix
+
+![Confusion Matrix](outputs/confusion_matrix.png)
+
+## Results
+
+- 43 tumor images correctly classified
+- 21 no-tumor images correctly classified
+- 4 false negatives
+- 8 false positives
+
+Note: Educational project only.
+The model is not suitable for medical diagnosis.
